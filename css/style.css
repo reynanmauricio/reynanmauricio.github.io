@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*isso é uma regra utilizado para resetar o que eu quero.
+Nesse caso escolhi colocar todas as margins e paddings para zero antes do programa rodar*/
+html, body {
+    height: 100%;
+}
+
+body{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    background: rgb(28,40,153);
+    background: linear-gradient(180deg, rgba(28,40,153,1) 0%, rgba(12,21,102,1) 100%);
+    /*background-color: #364dcc;*/
+}
+
+.avatar{
+    width: 80px;
+    border-radius: 50px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.profile{
+    text-align: center;
+    margin-top: 10px;
+}
+.social {
+    display:flex;
+    justify-content:space-around; /*só funciona com o flex*/
+    list-style: none; /*tirar as bolinhas da lista*/
+    margin: 20px 0; /*20px pra top e bottom e 0 left e right (relógio)*/
+}
+/*Flexbox= quando coloca flex num elemento pai, todos os elementos filhos vão ficar 
+    lado a lado*/
+
+.social img {
+    width: 33px;
+}
+/*.social img {} (tem a tag social e dentro da tag social tem uma ou várias imagens. 
+Essa tag irá pegar todas as imagens presentes. Ou criar uma tag única pra aquela imagem
+Ex. .social .primeiraImagem {}*/
+
+.links-list{
+    list-style: none;
+}
+
+.links-list li {
+    margin: 10px 20px; /*top bottom, left right*/
+}
+
+.links-list li a {
+    display: block;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: rgb(28,40,153);
+    font-weight: bold;
+}
+
+.links-list li a span {
+    color: grey;
+    display: block; /*elementos inline tipo a ou span não tem comportamento de um block, ou seja, 
+    ele não consegue ter margem ou se empurrar, ele faz com que os elementos fiquem todos lado a lado.*/
+    margin-top: 10px;
+}
+/*.list {
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    list-style: none;
+    border: 5px solid white;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 0 5px white;
+
+    Feito por mim no desafio do vídeo kkkk
+}*/ 
